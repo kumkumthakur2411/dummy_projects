@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width:100%;
+}
+#main{
+    background-color: rgb(76, 80, 38);
+    height: 100vh;
+    width: 100vw;  
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main img{
+    height: 75%;
+    width: 25%;
+    position: relative;
+    z-index: 99;
+}
+#main #scroll-div1{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#scroll-div1 h1{
+   display: inline-block;
+   font-size: 150px;
+   font-weight: 900;
+   margin-right: 30px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   animation-name: scroll;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+#scroll-div1::-webkit-scrollbar{
+    display: none;
+}
+#main #scroll-div2{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    z-index: 999;    
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#scroll-div2 h1{
+   display: inline-block;
+   font-size: 150px;
+   font-weight: 900;
+   margin-right: 30px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-transform: uppercase;
+   color: transparent;
+   letter-spacing: 5px;
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: black;
+   animation-name: scroll;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   animation-direction: reverse;
+}
+#scroll-div2::-webkit-scrollbar{
+    display: none;
+}
+#main #scroll-div3{
+    position: absolute;
+    top: 60%;
+    width: 100%;   
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#scroll-div3 h1{
+   display: inline-block;
+   font-size: 150px;
+   font-weight: 900;
+   margin-right: 30px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   animation-name: scroll;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+#scroll-div3::-webkit-scrollbar{
+    display: none;
+}
+#text{
+    position: absolute;
+    top: 13%;
+    left: 30%;
+    /* transform: translate(5,-30%); */
+    width: 40%;
+    z-index: 999;
+    text-align: center;    
+}
+@keyframes scroll {
+    from{
+        transform: translateX(calc(-100% - 32px));      
+    }
+    to{
+        transform: translateX(0);
+    }
+    
+}

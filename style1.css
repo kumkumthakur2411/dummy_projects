@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#page1{
+    height: 100vh;
+    width: 100vw;
+    background-color: #C4BCB3;
+    position: relative;
+}
+#nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    padding: 0 30px;
+    /* element ke andar space */
+    /* at x axis center */
+    justify-content: space-between;
+    /* center along y axis */
+    border-bottom: 1px solid black;
+}
+#nav h5{
+    font-weight: 50;
+    font-size: 15px;
+    width: 30%;
+}
+#nav img{
+    height: 30px;
+    width:30%;
+}
+#nav i{
+    width: 30%;
+    text-align: right;
+}
+#elems{
+    
+    height:300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+#elem1{
+    width:30%;
+    height: 100%;
+
+}
+#elem2{
+    width:25%;
+    height: 100%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 20px 60px;
+    text-align: center;
+}
+#elem3{
+    width:30%;
+    height: 100%;
+
+}
+#img-div{
+    height:50%;
+    width: 100%;
+    overflow: hidden;
+    transition: all ease 0.5s;
+}
+#img-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#img-div:hover img{
+    scale: 1.1;
+}
+#elem1 h4{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#elem1 h4 span{
+    background-color: orangered;
+    color: white;
+}

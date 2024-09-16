@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width:100%;
+}
+#main{
+    background-color: rgb(76, 80, 38);
+    height: 100vh;
+    width: 100vw;
+   position: relative;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center;      */
+}
+#center{
+    position: absolute;
+    top: 10%;
+    left: 20%; 
+    /* overflow: hidden; */
+    width:70%;
+    height:80%;
+    position: relative;   
+}
+.image-container{
+    overflow: hidden;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+}
+img{
+    height: 100%;
+    object-fit: cover;
+    z-index: 99;
+}
+#one{
+    width: 100%;
+}
+#two{
+    width: 100%;
+}
+#three{
+    width: 100%;
+}
+#text{
+    overflow: hidden;
+position: absolute;
+bottom: 15%;
+left:-10%;
+/* transform: translate(0%,-10%); */
+overflow: hidden;
+width: 400px;
+height: 110px;
+z-index: 999;
+
+}
+#text h1{
+top: 100px;
+    position: absolute;
+    font-size: 7vw;
+}
